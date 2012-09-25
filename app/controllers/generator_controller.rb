@@ -9,8 +9,8 @@ class GeneratorController < ApplicationController
     postParams = params['csr']
     @commonName = postParams['CN']
     # parse out the DN
-    dn_s = postParams.map{|k, v| "#{k}=#{v}"}.join("/")
-    dn = OpenSSL::X509::Name.parse dn_s
+    dn = OpenSSL::X509::Name.new
+    postParams.each{|k, v| dn.add_entry(k, v)}
     
     # create a new key
     key = OpenSSL::PKey::RSA.new 2048
