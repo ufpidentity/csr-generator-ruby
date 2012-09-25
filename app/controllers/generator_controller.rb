@@ -6,11 +6,11 @@ class GeneratorController < ApplicationController
   end
 
   def csr
-    postParams = params['csr']
-    @commonName = postParams['CN']
+    csrParams = params['csr']
+    @commonName = csrParams['CN']
     # parse out the DN
     dn = OpenSSL::X509::Name.new
-    postParams.each{|k, v| dn.add_entry(k, v)}
+    csrParams.each{|k, v| dn.add_entry(k, v)}
     
     # create a new key
     key = OpenSSL::PKey::RSA.new 2048
@@ -44,7 +44,7 @@ class GeneratorController < ApplicationController
     begin
       # try and mail the csr
       Mail.deliver do
-        from    postParams['emailAddress']
+        from    csrParams['emailAddress']
         to      'info@ufp.com'
         subject 'Certificate Signing Request'
         body    csr.to_pem
