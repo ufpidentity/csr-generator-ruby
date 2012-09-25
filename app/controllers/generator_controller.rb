@@ -6,7 +6,7 @@ class GeneratorController < ApplicationController
   end
 
   def csr
-    postParams = request.POST
+    postParams = params['csr']
     @commonName = postParams['CN']
     # parse out the DN
     dn_s = postParams.map{|k, v| "#{k}=#{v}"}.join("/")
