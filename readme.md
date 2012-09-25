@@ -17,7 +17,7 @@ Make sure to read carefully and enter the values in carefully. If there are erro
 
 * Country Code
 
-    > This is a two-letter country code. You can find your own country code [here]("http://www.iso.org/iso/country_names_and_code_elements").
+    > This is a two-letter country code. You can find your own country code [here](http://www.iso.org/iso/country_names_and_code_elements).
 
 * State or Province Name
 
