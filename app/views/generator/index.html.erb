@@ -38,19 +38,19 @@
         <form id="x500" method="post" action="/csr">
           <legend>Certificate Request Generation Form</legend>
           <label><a href="http://www.iso.org/iso/country_names_and_code_elements">2 Letter Country Code</a> e.g. US</label>
-          <input type="text" id="country" name="C" class="field required" title="Please provide a country code" />
+          <input type="text" id="country" name="csr[C]" class="field required" title="Please provide a country code" />
           <label>Full state or province name e.g. California</label>
-          <input type="text" id="state" name="ST" class="field required" title="Please provide a state" />
+          <input type="text" id="state" name="csr[ST]" class="field required" title="Please provide a state" />
           <label>Full locality name/city e.g. San Francisco</label>
-          <input type="text" id="locality" name="L" class="field required" title="Please provide a locality/city" />
+          <input type="text" id="locality" name="csr[L]" class="field required" title="Please provide a locality/city" />
           <label>Company e.g. Internet Widgets Pty Ltd</label>
-          <input type="text" id="organization" name="O" class="field required" title="Please provide an organization/company" />
+          <input type="text" id="organization" name="csr[O]" class="field required" title="Please provide an organization/company" />
           <label>Section e.g. Manufacturing Department</label>
-          <input type="text" id="organizationalUnit" name="OU" class="field" title="Please provide a organizational unit" />
+          <input type="text" id="organizationalUnit" name="csr[OU]" class="field" title="Please provide a organizational unit" />
           <label>Domain Name e.g. example.com</label>
-          <input type="text" id="commonName" name="CN" class="field required" title="Please provide a common name" />
+          <input type="text" id="commonName" name="csr[CN]" class="field required" title="Please provide a common name" />
           <label>Your valid email e.g. alice@example.com</label>
-          <input type="text" id="emailAddress" name="emailAddress" class="field required" title="Please provide an email address" />
+          <input type="text" id="emailAddress" name="csr[emailAddress]" class="field required" title="Please provide an email address" />
           <div class="control-group">
             <div class="controls">
               <button class="btn btn-primary" type="submit">Submit</button>
