@@ -2,7 +2,7 @@
 
 This application provides a form for creating a Certificate Signing Request. The application will create a public/private keypair, encrypt the private key with a random 16 byte secret key, generate the CSR and try to mail the generated CSR to &#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;. 
 
-To build this application, assuming you have a working ruby/RoR environment, do:
+To build this application, assuming you have a working Ruby/RoR environment, do:
 
     bundle install
     rails s
