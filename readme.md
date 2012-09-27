@@ -1,6 +1,6 @@
 ## Overview
 
-This application provides a form for creating a Certificate Signing Request. The application will create a public/private keypair, encrypt the private key with a random 16 byte secret key, generate the CSR and try to mail the generated CSR to &#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;. 
+This application provides a form for creating a Certificate Signing Request. The application will create a public/private keypair, encrypt the private key with a random 16 byte secret key, generate the CSR and try to mail the generated CSR to [&#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;](mailto:&#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;).
 
 To build this application, assuming you have a working Ruby/RoR environment, do:
 
@@ -37,8 +37,12 @@ Make sure to read carefully and enter the values in carefully. If there are erro
 
 * Domain Name
 
-    > Put some thought into your domain name as this is how the ufpIdentity service will identify you. You can put anything you like here but typical examples are your actual domain name e.g. example.com which would allow you to use the ufpIdentity service for a host of machines. You can also tie it to specific machine e.g. www.example.com. Any unique identifier will work but if you have questions please dont hesitate to contact us with any questions.
+    > Put some thought into your domain name as this is how the ufpIdentity service will identify you. You can put anything you like here but typical examples are your actual domain name e.g. example.com which would allow you to use the ufpIdentity service for a host of machines. You can also tie it to specific machine e.g. www.example.com. Any unique identifier will work but if you have questions please dont hesitate to [contact us](mailto:&#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;).
 
 * Email
 
-   > This should be a valid email and should allow us to contact someone responsible. 
+   > This should be a valid email and should allow us to contact someone responsible.
+
+## Using the generated credentials
+
+Upon successful completion of the Certificate Generation process you should have three new files in the tmp directory. The file name prefix is the common name you chose. The three files are the secret key (.key), the public/private key encrypted with the secret key (.key.pem), and the certificate signing request (.csr.pem). Within 24 hours of mailing the certificate signing request to us, you should receive a certificate named with the same common name prefix (.crt.pem). Then you need to configure the public/private key and the secret key to decrypt, the certificate, and the truststore which is provided with most examples.
