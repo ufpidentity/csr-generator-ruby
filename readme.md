@@ -1,6 +1,6 @@
 ## Overview
 
-This application provides a form for creating a Certificate Signing Request. The application will create a public/private keypair, encrypt the private key with a random 16 byte secret key, generate the CSR and try to mail the generated CSR to [&#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;](mailto:&#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;).
+This application provides a form for creating a Certificate Signing Request. The application will create a public/private keypair, encrypt the private key with a random 16 byte secret key, generate the CSR and try to mail the generated CSR to [&#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;](mailto:info@ufp.com).
 
 To build this application, assuming you have a working Ruby/RoR environment, do:
 
@@ -37,7 +37,7 @@ Make sure to read carefully and enter the values in carefully. If there are erro
 
 * Domain Name
 
-    > Put some thought into your domain name as this is how the ufpIdentity service will identify you. You can put anything you like here but typical examples are your actual domain name e.g. example.com which would allow you to use the ufpIdentity service for a host of machines. You can also tie it to specific machine e.g. www.example.com. Any unique identifier will work but if you have questions please dont hesitate to [contact us](mailto:&#105;&#110;&#102;&#111;&#64;&#117;&#102;&#112;&#46;&#99;&#111;&#109;).
+    > Put some thought into your domain name as this is how the ufpIdentity service will identify you. You can put anything you like here but typical examples are your actual domain name e.g. example.com which would allow you to use the ufpIdentity service for a host of machines. You can also tie it to specific machine e.g. www.example.com. Any unique identifier will work but if you have questions please dont hesitate to [contact us](mailto:info@ufp.com).
 
 * Email
 
